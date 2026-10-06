@@ -1,0 +1,536 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eat Eat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="foodie.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                🍕 EAT EAT 🍔
+            </a>
+
+            <div class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        🍕 EAT EAT 🍔
+                    </h5>
+
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                    </button>
+
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#menu">
+                                Menu
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="home"
+            class="welcome min-h-screen flex items-center justify-center text-center">
+
+            <div class="welcome-text max-w-4xl mx-auto p-10 rounded-4xl">
+
+                <h2 class="!text-yellow-300 fw-bold display-3">
+                    Welcome to Eat Eat!!
+                </h2>
+
+                <p class="text-white fs-4 mt-4">
+                    First you eat.
+                </p>
+
+                <p class="text-white fs-4">
+                    Then you will,
+                </p>
+
+                <p class="text-white fs-4">
+                    Fight to eat.
+                </p>
+
+                <a href="#menu"
+                    class="order-btn inline-block mt-4 px-5 py-3 rounded-pill text-white text-decoration-none">
+                    Order Now
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section id="menu" class="py-5">
+
+            <div class="container py-5">
+
+                <h2 class="text-center !text-yellow-300 fw-bolder display-5 mb-5">
+                    Our Food Menu
+                </h2>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+
+                    <div class="col">
+
+                        <div class="food-card card p-3 text-center h-100">
+
+                            <img src="pizza.jpeg"
+                                class="card-img-top"
+                                alt="Pizza">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title fw-bold">
+                                    Cheese Pizza
+                                </h3>
+
+                                <p class="card-text">
+                                    Hot and cheesy pizza with fresh toppings.
+                                </p>
+
+                            </div>
+
+                            <div class="d-flex justify-content-around align-items-center mb-3">
+
+                                <h4 class="fw-bold">
+                                    ₹250
+                                </h4>
+
+                                <button class="btn">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col">
+
+                        <div class="food-card card p-3 text-center h-100">
+
+                            <img src="burger.jpeg"
+                                class="card-img-top"
+                                alt="Burger">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title fw-bold">
+                                    Classic Burger
+                                </h3>
+
+                                <p class="card-text">
+                                    Juicy burger with fresh vegetables and cheese.
+                                </p>
+
+                            </div>
+
+                            <div class="d-flex justify-content-around align-items-center mb-3">
+
+                                <h4 class="fw-bold">
+                                    ₹180
+                                </h4>
+
+                                <button class="btn">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col">
+
+                        <div class="food-card card p-3 text-center h-100">
+
+                            <img src="pasta.jpeg"
+                                class="card-img-top"
+                                alt="Pasta">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title fw-bold">
+                                    Creamy Pasta
+                                </h3>
+
+                                <p class="card-text">
+                                    Delicious pasta cooked in a creamy sauce.
+                                </p>
+
+                            </div>
+
+                            <div class="d-flex justify-content-around align-items-center mb-3">
+
+                                <h4 class="fw-bold">
+                                    ₹220
+                                </h4>
+
+                                <button class="btn">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col">
+
+                        <div class="food-card card p-3 text-center h-100">
+
+                            <img src="biriyani.jpeg"
+                                class="card-img-top"
+                                alt="Biryani">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title fw-bold">
+                                    Chicken Biryani
+                                </h3>
+
+                                <p class="card-text">
+                                    Fragrant rice cooked with chicken and spices.
+                                </p>
+
+                            </div>
+
+                            <div class="d-flex justify-content-around align-items-center mb-3">
+
+                                <h4 class="fw-bold">
+                                    ₹280
+                                </h4>
+
+                                <button class="btn">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col">
+
+                        <div class="food-card card p-3 text-center h-100">
+
+                            <img src="fried-rice.jpeg"
+                                class="card-img-top"
+                                alt="Fried Rice">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title fw-bold">
+                                    Fried Rice
+                                </h3>
+
+                                <p class="card-text">
+                                    Flavorful fried rice with fresh vegetables.
+                                </p>
+
+                            </div>
+
+                            <div class="d-flex justify-content-around align-items-center mb-3">
+
+                                <h4 class="fw-bold">
+                                    ₹200
+                                </h4>
+
+                                <button class="btn">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col">
+
+                        <div class="food-card card p-3 text-center h-100">
+
+                            <img src="ice-cream.jpeg"
+                                class="card-img-top"
+                                alt="Ice Cream">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title fw-bold">
+                                    Ice Cream
+                                </h3>
+
+                                <p class="card-text">
+                                    Cold and creamy dessert with a delicious taste.
+                                </p>
+
+                            </div>
+
+                            <div class="d-flex justify-content-around align-items-center mb-3">
+
+                                <h4 class="fw-bold">
+                                    ₹120
+                                </h4>
+
+                                <button class="btn">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="about" class="about py-5">
+
+            <div class="container text-center py-5">
+
+                <h2 class="!text-yellow-300 fw-bolder display-5 mb-4">
+                    About Eat Eat
+                </h2>
+
+                <p class="text-white fs-4 max-w-3xl mx-auto">
+                    Eat Eat is a friendly restaurant serving delicious and fresh food
+                    made with quality ingredients. We provide tasty meals in a
+                    comfortable and welcoming environment.
+                </p>
+
+                <h3 class="text-white fw-bold mt-5 mb-3">
+                    Opening Hours
+                </h3>
+
+                <p class="!text-lime-300 fs-4">
+                    Monday - Sunday: 10:00 AM - 10:00 PM
+                </p>
+
+                <h3 class="text-white fw-bold mt-5 mb-3">
+                    Location
+                </h3>
+
+                <p class="!text-lime-300 fs-4">
+                    Kochi, Kerala, India
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="contact" class="contact py-5">
+
+            <div class="container py-5">
+
+                <h2 class="text-center !text-yellow-300 fw-bolder display-5 mb-5">
+                    Contact / Reservation
+                </h2>
+
+                <form class="mx-auto max-w-2xl bg-white p-5 rounded-4xl shadow-lg">
+
+                    <label for="name" class="fw-bold mt-3">
+                        Name
+                    </label>
+
+                    <input type="text"
+                        id="name"
+                        class="form-control p-3 mt-2"
+                        placeholder="Enter your name">
+
+
+                    <label for="email" class="fw-bold mt-4">
+                        Email
+                    </label>
+
+                    <input type="email"
+                        id="email"
+                        class="form-control p-3 mt-2"
+                        placeholder="Enter your email">
+
+
+                    <label for="phone" class="fw-bold mt-4">
+                        Phone
+                    </label>
+
+                    <input type="tel"
+                        id="phone"
+                        class="form-control p-3 mt-2"
+                        placeholder="Enter your phone number">
+
+
+                    <label for="date" class="fw-bold mt-4">
+                        Reservation Date
+                    </label>
+
+                    <input type="date"
+                        id="date"
+                        class="form-control p-3 mt-2">
+
+
+                    <label for="people" class="fw-bold mt-4">
+                        Number of People
+                    </label>
+
+                    <input type="number"
+                        id="people"
+                        class="form-control p-3 mt-2"
+                        placeholder="Number of people">
+
+
+                    <label for="message" class="fw-bold mt-4">
+                        Message
+                    </label>
+
+                    <textarea id="message"
+                        class="form-control p-3 mt-2"
+                        rows="4"
+                        placeholder="Any special request"></textarea>
+
+
+                    <button type="submit"
+                        class="btn w-100 mt-4 py-3">
+                        Reserve Table
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <section class="special-offer py-5">
+
+            <div class="container text-center">
+
+                <h2 class="fw-bolder display-5 mb-3">
+                    Weekend Special
+                </h2>
+
+                <p class="fs-4 mb-4">
+                    Get 20% OFF on all food items!
+                </p>
+
+                <button class="btn px-5 py-3">
+                    Order Now
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="text-center text-white py-2">
+
+        <p class="mb-1">
+            &copy; 2026 Eat Eat. All Rights Reserved.
+        </p>
+
+        <p class="mb-0">
+            Delicious food, happy moments!
+        </p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+```
